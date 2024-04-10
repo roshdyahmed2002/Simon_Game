@@ -1,0 +1,122 @@
+body {
+    background-color: #011F3F;
+    margin: 0;
+    padding: 0;
+}
+
+.titleDiv {
+    margin: 1%;
+}
+
+.title {
+    color: #FEF2BF;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100px;
+}
+
+colorGrid {
+    margin-top: 7%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Initial setup with equal width columns */
+    justify-content: center;
+    grid-gap: 10px; /* Adjusted grid-gap */
+}
+
+gridItem {
+    max-width: 200px;
+    height: 100px;
+}
+.colorFlex1{
+    display: flex;
+    justify-content: center;
+    margin-top: 7%;
+    flex-wrap: nowrap;
+    gap: 10px;
+
+}
+.colorFlex2{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+}
+.button {
+    width: 200px;
+    height: 200px;
+}
+
+.greenbtn {
+    background-color: green;
+}
+
+.redbtn {
+    background-color: red;
+}
+
+.yellowbtn {
+    background-color: yellow;
+}
+
+.bluebtn {
+    background-color: blue;
+}
+
+.greenbtn:active {
+    background-color: #4caf50; /* Light-up color for green */
+}
+
+.bluebtn:active {
+    background-color: #007bff; /* Light-up color for blue */
+}
+
+.yellowbtn:active {
+    background-color: #f9ec7b; /* Light-up color for yellow */
+}
+
+.redbtn:active {
+    background-color: #f03f51; /* Light-up color for red */
+}
+
+.lightgreen{
+    background-color: #00ff00; /* Light-up color for green */
+}
+
+.lightblue{
+    background-color: #6495ed; /* Light-up color for blue */
+}
+
+.lightyellow{
+    background-color: #ffff66; /* Light-up color for yellow */
+}
+
+.lightred{
+    background-color: #ff6347; /* Light-up color for red */
+}
+
+.levelP{
+    color: #FEF2BF;
+    font-size: 2rem;
+}
+.gameFlex{
+    display: flex;
+    justify-content:space-around;
+}
+.titleFlexItem{
+    align-self:center;
+    display: flex;
+    justify-content:right;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 600px) {
+    .colorGrid {
+        grid-template-columns: 1fr; /* One column for smaller screens */
+    }
+    .gameFlex{
+        flex-direction: column;
+    }
+    .title{
+        font-size: 50px;
+    }
+}
